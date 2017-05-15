@@ -1,0 +1,172 @@
+#bracket-chart .label {
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+}
+#bracket-chart .label.club {
+    -fx-text-fill: black;
+    -fx-font-size: 14;
+}
+#bracket-chart .title {
+    -fx-text-fill: black;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+
+#bracket-chart .lvl {
+    -fx-stroke: #555;
+    -fx-font-size: 12;
+}
+
+.redSquare {
+    -fx-fill: #c00;
+    -fx-stroke: #ccc;
+    -fx-stroke-width:1;
+}
+.whiteSquare {
+    -fx-fill: #fff;
+    -fx-stroke: #ccc;
+    -fx-stroke-width:1;
+}
+.line {
+    -fx-stroke: #333;
+}
+.dotted-line {
+    -fx-stroke: #555;
+}
+.label {
+
+}
+.ranked {
+    -fx-font-weight: bold;
+}
+
+/*startinglists view*/
+
+.startingList-top  {
+    -fx-padding: 40;
+    -fx-background-color: red;
+    -fx-fill: #d5e0f2;
+    -fx-font-size:18;
+    -fx-font-weight:bold;
+}
+.startingList-middle  {
+    -fx-padding: 20;
+
+    -fx-fill: white;
+}
+.startingList-bottom  {
+    -fx-padding: 20;
+    -fx-fill: white;
+    -fx-font-size:16;
+    -fx-font-weight:bold;
+}
+
+.jfx-button.startingList-bottom  {
+    -fx-padding: 5;
+    -fx-font-size:14;
+    -fx-font-weight:bold;
+    -fx-background-color: rgba(255,255,255,0);
+
+    /*    -fx-border-color: #ccc;
+        -fx-border-width: 5;
+        -fx-stroke-line-cup: butt;*/
+    -fx-cursor: hand;
+    -fx-margin: 40, 30, 20, 10;
+    -fx-text-fill: #fff;
+
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.startingList-container {
+    -fx-spacing: 10;
+    -fx-padding: 20 0 10 0;
+}
+
+/*contestants view*/
+.accordion .titled-pane > *.content{
+    -fx-background-color: rgba(255,255,255,0.3) ;
+}
+
+
+
+/*board management view*/
+.boardMainScroll {
+    -fx-pref-width: 1200;
+}
+.boardBox {
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-pref-height: 220;
+    -fx-pref-width: 320;
+}
+#box0.boardBox {
+    -fx-pref-width: 1300;
+}
+
+.boardScrollPane {
+    -fx-pref-height: 250;
+    -fx-pref-width: 330;
+}
+
+#gameBar {
+    -fx-background-color:rgba(58,86,14,0.6);
+    
+    -fx-pref-width: 1000;
+    -fx-margin: 0 0 0 10px;
+}
+
+#gameBar .label {
+    
+    -fx-font-size:16;
+    
+    -fx-font-weight:normal;
+}
+
+
+#question_txt {
+    -fx-font-size:22;   
+    -fx-fill: rgb(58,86,14); 
+ 
+    -fx-padding: 15px;
+    -fx-background-color:rgba(58,86,14,0.2);
+        -fx-margin: 0 0 0 20px;
+        -fx-max-wdth: 800px;
+        -fx-text-wrap: true;
+}
+#question_que, #question_ans {
+    -fx-font-size:22; 
+}
+
+#answers label {
+      -fx-font-size:16;
+    
+    -fx-font-weight:normal;
+}
+#answers HBox {
+      
+    -fx-pref-width: 400;
+    -fx-pref-height: 200;
+    -fx-background-color:rgba(58,86,14,0.2);
+}
+#answers HBox .label{
+      
+    -fx-pref-width: 340;
+    
+}
+#answers .button {
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+}
+#answers HBox VBox {
+    -fx-spacing: 20;
+}
+#a1_bet,#a2_bet,#a3_bet,#a4_bet {
+    -fx-font-size:18;
+    
+    -fx-fill:rgba(58,86,14,1);
+}
+#question_cat {
+    padding-top: 20px;
+}

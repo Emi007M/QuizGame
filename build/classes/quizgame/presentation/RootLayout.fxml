@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXTabPane?>
+
+<BorderPane fx:id="mainPane"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" 
+            xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="quizgame.presentation.RootLayoutController">
+   
+    <center>
+<!--        <JFXTabPane fx:id="tabs" prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+            
+                <Tab fx:id="tabManageTournaments" text="%tab.manage-tournaments">
+                    <content>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabCurrentTournament" text="%tab.current-tournament">
+                    <content>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabSettings" text="%tab.settings">
+                    <content>
+                    </content>
+                </Tab>
+                
+            
+            </tabs>
+        </JFXTabPane>-->
+    </center>
+    <stylesheets>
+        <URL value="@layout.css" />
+    </stylesheets>
+</BorderPane>
