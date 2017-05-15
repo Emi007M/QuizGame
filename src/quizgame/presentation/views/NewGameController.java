@@ -238,8 +238,7 @@ public class NewGameController extends LayoutBaseController {
         int bet = getRootLayoutController().game.changeBet(0, 10000);
         
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
-        getRootLayoutController().game.setBudget(moneyLeftToBet);
+        int moneyLeftToBet = getRootLayoutController().game.getBudget() - getRootLayoutController().game.sumBets();
     }
 
     private void handleA1DownBtn() {
@@ -325,6 +324,12 @@ public class NewGameController extends LayoutBaseController {
         String right = getRootLayoutController().game.getCurrentQuestion().getRightAnswer();
         
         int ans = 0;
+        
+        
+         a1_txt.getStyleClass().add("answered");
+         a2_txt.getStyleClass().add("answered");
+         a3_txt.getStyleClass().add("answered");
+         a4_txt.getStyleClass().add("answered");
         
         if(a1_txt.getText().equals(right)) {
             a1_txt.getStyleClass().add("correct");
