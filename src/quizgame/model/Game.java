@@ -54,6 +54,14 @@ public class Game {
      * @param amount money to put/take
      */
     public int changeBet(int number, int amount){
+        //check if 3 other already bet
+        int betQuestionsButThis = 0;
+        for(int i =0; i<4;i++){
+            if(i!=number && bets[i]>0)
+                betQuestionsButThis++;
+        }
+        if (betQuestionsButThis==3) return bets[number];
+        
         if(amount<0){ //if substracting
             if(bets[number]+amount>0)
                 bets[number] += amount;
