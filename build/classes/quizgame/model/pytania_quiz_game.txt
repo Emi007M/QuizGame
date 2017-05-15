@@ -1,103 +1,103 @@
-Pañstwa - Miasta|Ile stanów ma Australia?|6|8|4|2
-Pañstwa - Miasta|Który z wymienionych krajów jest podwójnie œródl¹dowy?|Uzbekistan|Macedonia|Kenia|S³owacja
-Pañstwa - Miasta|Jakiego koluru NIE MA na fladze Kuby?|¯ó³ty|Czerwony|Bia³y|Niebieski
-Pañstwa - Miasta|Które z wymienionych pañstw jest najwiêksze bior¹c pod uwagê liczbê ludnoœci?|Chiny|USA|Rosja|Indie
-Pañstwa - Miasta|Które z wymienionych pañstw jest najwiêksze bior¹c pod uwagê powierzchniê?|Rosja|USA|Kanada|Australia
-Pañstwa - Miasta|Które pañstwo odwraca flagê w czasie wojny?|Filipiny|Indie|Izrael|Kuwejt
-Pañstwa - Miasta|Hymn którego pañstwa nie ma s³ów?|Hiszpania|USA|Kanada|W³ochy
-Pañstwa - Miasta|Hymn którego pañstwa ma tak¹ muzykê co hymn Grecji?|Cypr|Albania|Macedonia|Bu³garia
-Pañstwa - Miasta|Które pañstwo ma najd³u¿szy hymn na œwiecie?|Grecja|Rosja|Polska|Kanada
-Pañstwa - Miasta|Które z wymienionych pañstw NIE jest enklaw¹?|Lichtenstein|Watykan|San Marino|Lesotho
-Geografia|Na terenie którego kraju jest najwiêcej czynnych wulkanów?|Indonezja|W³ochy|Islandia|Filipiny
-Geografia|Które jezioro jest najwiêksze na œwiecie?|Kaspijskie|Michigan|Górne|Bajka³
-Geografia|Które jezioro jest najg³êbsze na œwiecie?|Bajka³|Kaspijskie|Toba|Niasa
-Geografia|Która rzeka w USA jest najd³u¿sza?|Missuori|Mississippi|Jukon|Rio Grande
-Geografia|Jaka jest najwy¿sza strefa czasowa?|UTC+14|UTC+13|UTC+12|UTC+10
-Geografia|W którym kraju jest najwiêcej jezior?|Kanada|Polska|Finlandia|Norwegia
-Geografia|Jaki jest najwy¿szy szczyt na œwiecie?|Mount Everest|K2|K12|Kanczendzonga
-Geografia|Ile liter ma najkrótsza nazwa miasta ma œwiecie?|1|2|3|4
-Geografia|Ile procent ca³ej populacji œwiata ¿yje na pó³kuli pó³nocnej?|90|70|50|40
-Geografia|Ile oœmiotysiêczników jest na œwiecie?|14|12|10|8
-Sport|Zawody w której z wymienionych dyscyplin NIE by³y rozgrywane na pierwszych nowo¿ytnych Letnich Igrzyskach Olimpijskich w 1896 roku?|Siatkówka|P³ywanie|Strzelnictwo|Tenis
-Sport|Ile lat mia³ najstarszy medalista igrzysk olimpijskich?|72|70|68|66
-Sport|Ile lat mia³ najm³odszy medalista igrzysk olimpijskich?|10|9|8|11
-Sport|Która z wymienionych dyscyplin nigdy nie by³a czêœci¹ igrzysk olimpijskich? (2017)|squash|przeci¹ganie liny|wspinaczka po linie|windsurfing
-Sport|Ile razy NIE odby³y siê nowo¿ytne Letnie Igrzyska Olimpijskie? (2017)|3|2|1|0
-Sport|W którym roku odby³y siê pierwsze  mistrzostwa Euro?|1960|1900|1880|1972
-Sport|Który z wymienionych krajów NIE zdoby³ tytu³u jako gospodarz Euro? (2017)|Portugalia|Hiszpania|W³ochy|Francja
-Sport|W którym roku odby³ siê pierwszy Mundial?|1930|1926|1902|1934
-Sport|W meczu przeciwko której dru¿ynie Robert Lewandowski strzeli³ 5 goli w 9 minut?|VfL Wolfsburg|Borussia Dortmund|Bayern Monachium|FC Köln
-Sport|Który kraj wygra³ pierwszy Mundial?|Urugwaj|Niemcy|Argentyna|Brazylia
-Historia|Ile ¿on mia³ Henryk VIII?|6|8|5|4
-Historia|W którym roku Krzysztof Kolumb odkry³ Amerykê?|1492|1464|1528|1586
-Historia|W którym roku zosta³ za³o¿ony Rzym?|753r.p.n.e.6|776r.p.n.e.|766r.p.n.e.|735r.p.n.e.
-Historia|W którym roku mia³ miejsce zamach na World Trade Center?|2011|2010|2009|2008
-Historia|W którym roku Niemcy najechali na Polskê, co zapocz¹tkowa³o II WŒ?|1939|1938|1940|1941
-Historia|W którym roku odby³a siê tzw. „Herbatka bostoñska”?|1773|1768|1722|1781
-Historia|Kto zapocz¹tkowa³ reformacjê?|Marcin Luter|Jan Kalwin|Henryk VIII|Faust Socyn
-Historia|W którym roku zosta³ zburzony Mur Berliñski?|1989|1945|1960|1979
-Historia|W którym roku zakoñczy³a siê I WŒ?|1918|1920|1914|1916
-Historia|W którym roku mia³a miejsce katastrofa elektrowni j¹drowej w Czarnobylu?|1986|1974|1998|1978
-Muzyka|Ile albumów studyjnych nagrali The Beatles?|27|30|20|16
-Muzyka|Który z tych muzyków nie by³ cz³onkiem The Beatles?|Elton John|George Harrison|Paul McCartney|John Lennon
-Muzyka|Która z tych piosenek nie jest piosenk¹ The Police?|Hey Jude|Roxanne|Every Breath You Take|Message in a Bottle
-Muzyka|Ok³adka którego albumyThe Beatles przedstawia cz³onków zespo³u id¹cych po pasach?|Abbey Road|Please Please Me|The Beatles|Let It Be
-Muzyka|Sk¹d pochodzi zespó³ Kodaline?|Irlandia|Anglia|Kanada|USA
-Muzyka|Kto skomponowa³ sonatê ksiê¿ycow¹?|Beethoven|Mozart|Bach|Chopin
-Muzyka|Który z wymienionych urodzi³ siê najwczeœniej?|Bach|Mozart|Chopin|Beethoven
-Muzyka|Która z tych piosenek NIE wygra³a Oscara?|Listen|Jai Ho|Skyfall|Let it go
-Muzyka|Ile klawiszy ma wspó³czesny fortepian?|88|64|72|96
+ï»¿PaÅ„stwa - Miasta|Ile stanÃ³w ma Australia?|6|8|4|2
+PaÅ„stwa - Miasta|KtÃ³ry z wymienionych krajÃ³w jest podwÃ³jnie Å›rÃ³dlÄ…dowy?|Uzbekistan|Macedonia|Kenia|SÅ‚owacja
+PaÅ„stwa - Miasta|Jakiego koluru NIE MA na fladze Kuby?|Å»Ã³Å‚ty|Czerwony|BiaÅ‚y|Niebieski
+PaÅ„stwa - Miasta|KtÃ³re z wymienionych paÅ„stw jest najwiÄ™ksze biorÄ…c pod uwagÄ™ liczbÄ™ ludnoÅ›ci?|Chiny|USA|Rosja|Indie
+PaÅ„stwa - Miasta|KtÃ³re z wymienionych paÅ„stw jest najwiÄ™ksze biorÄ…c pod uwagÄ™ powierzchniÄ™?|Rosja|USA|Kanada|Australia
+PaÅ„stwa - Miasta|KtÃ³re paÅ„stwo odwraca flagÄ™ w czasie wojny?|Filipiny|Indie|Izrael|Kuwejt
+PaÅ„stwa - Miasta|Hymn ktÃ³rego paÅ„stwa nie ma sÅ‚Ã³w?|Hiszpania|USA|Kanada|WÅ‚ochy
+PaÅ„stwa - Miasta|Hymn ktÃ³rego paÅ„stwa ma takÄ… muzykÄ™ co hymn Grecji?|Cypr|Albania|Macedonia|BuÅ‚garia
+PaÅ„stwa - Miasta|KtÃ³re paÅ„stwo ma najdÅ‚uÅ¼szy hymn na Å›wiecie?|Grecja|Rosja|Polska|Kanada
+PaÅ„stwa - Miasta|KtÃ³re z wymienionych paÅ„stw NIE jest enklawÄ…?|Lichtenstein|Watykan|San Marino|Lesotho
+Geografia|Na terenie ktÃ³rego kraju jest najwiÄ™cej czynnych wulkanÃ³w?|Indonezja|WÅ‚ochy|Islandia|Filipiny
+Geografia|KtÃ³re jezioro jest najwiÄ™ksze na Å›wiecie?|Kaspijskie|Michigan|GÃ³rne|BajkaÅ‚
+Geografia|KtÃ³re jezioro jest najgÅ‚Ä™bsze na Å›wiecie?|BajkaÅ‚|Kaspijskie|Toba|Niasa
+Geografia|KtÃ³ra rzeka w USA jest najdÅ‚uÅ¼sza?|Missuori|Mississippi|Jukon|Rio Grande
+Geografia|Jaka jest najwyÅ¼sza strefa czasowa?|UTC+14|UTC+13|UTC+12|UTC+10
+Geografia|W ktÃ³rym kraju jest najwiÄ™cej jezior?|Kanada|Polska|Finlandia|Norwegia
+Geografia|Jaki jest najwyÅ¼szy szczyt na Å›wiecie?|Mount Everest|K2|K12|Kanczendzonga
+Geografia|Ile liter ma najkrÃ³tsza nazwa miasta ma Å›wiecie?|1|2|3|4
+Geografia|Ile procent caÅ‚ej populacji Å›wiata Å¼yje na pÃ³Å‚kuli pÃ³Å‚nocnej?|90|70|50|40
+Geografia|Ile oÅ›miotysiÄ™cznikÃ³w jest na Å›wiecie?|14|12|10|8
+Sport|Zawody w ktÃ³rej z wymienionych dyscyplin NIE byÅ‚y rozgrywane na pierwszych nowoÅ¼ytnych Letnich Igrzyskach Olimpijskich w 1896 roku?|SiatkÃ³wka|PÅ‚ywanie|Strzelnictwo|Tenis
+Sport|Ile lat miaÅ‚ najstarszy medalista igrzysk olimpijskich?|72|70|68|66
+Sport|Ile lat miaÅ‚ najmÅ‚odszy medalista igrzysk olimpijskich?|10|9|8|11
+Sport|KtÃ³ra z wymienionych dyscyplin nigdy nie byÅ‚a czÄ™Å›ciÄ… igrzysk olimpijskich? (2017)|squash|przeciÄ…ganie liny|wspinaczka po linie|windsurfing
+Sport|Ile razy NIE odbyÅ‚y siÄ™ nowoÅ¼ytne Letnie Igrzyska Olimpijskie? (2017)|3|2|1|0
+Sport|W ktÃ³rym roku odbyÅ‚y siÄ™ pierwsze  mistrzostwa Euro?|1960|1900|1880|1972
+Sport|KtÃ³ry z wymienionych krajÃ³w NIE zdobyÅ‚ tytuÅ‚u jako gospodarz Euro? (2017)|Portugalia|Hiszpania|WÅ‚ochy|Francja
+Sport|W ktÃ³rym roku odbyÅ‚ siÄ™ pierwszy Mundial?|1930|1926|1902|1934
+Sport|W meczu przeciwko ktÃ³rej druÅ¼ynie Robert Lewandowski strzeliÅ‚ 5 goli w 9 minut?|VfL Wolfsburg|Borussia Dortmund|Bayern Monachium|FC KÃ¶ln
+Sport|KtÃ³ry kraj wygraÅ‚ pierwszy Mundial?|Urugwaj|Niemcy|Argentyna|Brazylia
+Historia|Ile Å¼on miaÅ‚ Henryk VIII?|6|8|5|4
+Historia|W ktÃ³rym roku Krzysztof Kolumb odkryÅ‚ AmerykÄ™?|1492|1464|1528|1586
+Historia|W ktÃ³rym roku zostaÅ‚ zaÅ‚oÅ¼ony Rzym?|753r.p.n.e.6|776r.p.n.e.|766r.p.n.e.|735r.p.n.e.
+Historia|W ktÃ³rym roku miaÅ‚ miejsce zamach na World Trade Center?|2011|2010|2009|2008
+Historia|W ktÃ³rym roku Niemcy najechali na PolskÄ™, co zapoczÄ…tkowaÅ‚o II WÅš?|1939|1938|1940|1941
+Historia|W ktÃ³rym roku odbyÅ‚a siÄ™ tzw. â€Herbatka bostoÅ„skaâ€?|1773|1768|1722|1781
+Historia|Kto zapoczÄ…tkowaÅ‚ reformacjÄ™?|Marcin Luter|Jan Kalwin|Henryk VIII|Faust Socyn
+Historia|W ktÃ³rym roku zostaÅ‚ zburzony Mur BerliÅ„ski?|1989|1945|1960|1979
+Historia|W ktÃ³rym roku zakoÅ„czyÅ‚a siÄ™ I WÅš?|1918|1920|1914|1916
+Historia|W ktÃ³rym roku miaÅ‚a miejsce katastrofa elektrowni jÄ…drowej w Czarnobylu?|1986|1974|1998|1978
+Muzyka|Ile albumÃ³w studyjnych nagrali The Beatles?|27|30|20|16
+Muzyka|KtÃ³ry z tych muzykÃ³w nie byÅ‚ czÅ‚onkiem The Beatles?|Elton John|George Harrison|Paul McCartney|John Lennon
+Muzyka|KtÃ³ra z tych piosenek nie jest piosenkÄ… The Police?|Hey Jude|Roxanne|Every Breath You Take|Message in a Bottle
+Muzyka|OkÅ‚adka ktÃ³rego albumyThe Beatles przedstawia czÅ‚onkÃ³w zespoÅ‚u idÄ…cych po pasach?|Abbey Road|Please Please Me|The Beatles|Let It Be
+Muzyka|SkÄ…d pochodzi zespÃ³Å‚ Kodaline?|Irlandia|Anglia|Kanada|USA
+Muzyka|Kto skomponowaÅ‚ sonatÄ™ ksiÄ™Å¼ycowÄ…?|Beethoven|Mozart|Bach|Chopin
+Muzyka|KtÃ³ry z wymienionych urodziÅ‚ siÄ™ najwczeÅ›niej?|Bach|Mozart|Chopin|Beethoven
+Muzyka|KtÃ³ra z tych piosenek NIE wygraÅ‚a Oscara?|Listen|Jai Ho|Skyfall|Let it go
+Muzyka|Ile klawiszy ma wspÃ³Å‚czesny fortepian?|88|64|72|96
 Muzyka|Ile strun ma typowa gitara?|6|7|8|5
-Cytaty|Czyj to cytat? „Zanim wyruszysz na zemstê, wykop dwa groby.”|Konfucjusz|Arystoteles|Kartezjusz|Sokrates
-Cytaty|Czyj to cytat? „Dobrze widzi siê tylko sercem. Najwa¿niejsze jest niewidoczne dla oczu.”|Antoine de Saint-Exupéry|Mario Vargas-Llosa|Paulo Coehlo|Umberto Eco
-Cytaty|Czyj to cytat? „Kocha siê za nic. Nie istnieje ¿aden powód do mi³oœci.”|Paulo Coehlo|Antoine de Saint-Exupéry|Umberto Eco|Nicholas Sparks
-Cytaty|Czyj to cytat? „Œwiat cierpi na brak mê¿czyzn, szczególnie tych, którzy s¹ cokolwiek warci.”|Jane Austen|Stephen King|Cassandra Clare|Nicholas Sparks
-Cytaty|Czyj to cytat? „To mo¿liwoœæ spe³nienia marzeñ sprawia, ¿e ¿ycie jest tak fascynuj¹ce.”|Paulo Coehlo|Antoine de Saint-Exupéry|Umberto Eco|Nicholas Sparks
-Cytaty|Czyj to cytat? „Diamenty to jedyni przyjaciele kobiety.”|Marylin Monroe|Jane Austen|Audrey Hepburn|Coco Chanel
-Cytaty|Czyj to cytat? „Moda przemija, styl pozostaje.”|Coco Chanel|Ralph Lauren|Marc Jacobs|Christian Lacroix
-Cytaty|Czyj to cytat? „Maj¹c takich przyjació³, nie potrzeba ju¿ wrogów.”|Winston Churchill|Oliver Cromwell|Margaret Thatcher|William Blake
-Cytaty|Czyj to cytat? „I ty, Brutusie, przeciw mnie?”|Juliusz Cezar|Tytus|Marek Aureliusz|Herakliusz
-Cytaty|Czyj to cytat? „(...) jeœli nie potrafisz znieœæ mnie kiedy jestem najgorsza, to cholernie pewne, ¿e nie zas³ugujesz na mnie, kiedy jestem najlepsza.”|Marylin Monroe|Jane Austen|Audrey Hepburn|Coco Chanel
-Zwierzêta|Który ptak potrafi lataæ do ty³u?|Koliber|Mewa|Jerzyk|Sikorka
-Zwierzêta|Gdzie umiejscowione jest serce krewetki?|W g³owie|W odw³oku|W tu³owiu|Nie ma serca
-Zwierzêta|Który ptak potrafi spaæ w locie?|Jerzyk|Koliber|Mewa|Sikorka
-Zwierzêta|Które z tych zwierz¹t potrafi zmieniæ swoj¹ p³eæ?|Ostryga|Pasikonik|Konik morski|Krewetka
-Zwierzêta|Które z tych zwierz¹t NIE stosuje autotomii?|W¹¿|Jaszczurka|Rak|Pajêczak
-Zwierzêta|Które z tych zwierz¹t uwa¿ane jest za najszczêœliwsze?|Kuoka|Kangur|Wiewiórka|Jaszczurka
-Zwierzêta|Który z tych ssaków sk³ada jaja?|Dziobak|Mrówkojad|Delfin|Nietoperz
-Zwierzêta|Która gromada jest najliczniejsza?|Stawonogi|Miêczaki|Krêgowce|G¹bki
-Zwierzêta|Które z tych pojêæ w systematyce jest najbardziej ogólne?|Typ|Gromada|Rz¹d|Rodzina
-Zwierzêta|Jaka jest przeciêtna waga s³onia?|6 ton|1 tona|500 kg|10 ton
-Alkohole|W którym kraju na œwiecie spo¿ywa siê najwiêcej piwa w przeliczeniu na osobê?|RPA|Czechy|Holandia|Niemcy
-Alkohole|Ile procent ma najmocniejsze piwo œwiata? (2017)|67,5|75,5|34,5|15,5
+Cytaty|Czyj to cytat? â€Zanim wyruszysz na zemstÄ™, wykop dwa groby.â€|Konfucjusz|Arystoteles|Kartezjusz|Sokrates
+Cytaty|Czyj to cytat? â€Dobrze widzi siÄ™ tylko sercem. NajwaÅ¼niejsze jest niewidoczne dla oczu.â€|Antoine de Saint-ExupÃ©ry|Mario Vargas-Llosa|Paulo Coehlo|Umberto Eco
+Cytaty|Czyj to cytat? â€Kocha siÄ™ za nic. Nie istnieje Å¼aden powÃ³d do miÅ‚oÅ›ci.â€|Paulo Coehlo|Antoine de Saint-ExupÃ©ry|Umberto Eco|Nicholas Sparks
+Cytaty|Czyj to cytat? â€Åšwiat cierpi na brak mÄ™Å¼czyzn, szczegÃ³lnie tych, ktÃ³rzy sÄ… cokolwiek warci.â€|Jane Austen|Stephen King|Cassandra Clare|Nicholas Sparks
+Cytaty|Czyj to cytat? â€To moÅ¼liwoÅ›Ä‡ speÅ‚nienia marzeÅ„ sprawia, Å¼e Å¼ycie jest tak fascynujÄ…ce.â€|Paulo Coehlo|Antoine de Saint-ExupÃ©ry|Umberto Eco|Nicholas Sparks
+Cytaty|Czyj to cytat? â€Diamenty to jedyni przyjaciele kobiety.â€|Marylin Monroe|Jane Austen|Audrey Hepburn|Coco Chanel
+Cytaty|Czyj to cytat? â€Moda przemija, styl pozostaje.â€|Coco Chanel|Ralph Lauren|Marc Jacobs|Christian Lacroix
+Cytaty|Czyj to cytat? â€MajÄ…c takich przyjaciÃ³Å‚, nie potrzeba juÅ¼ wrogÃ³w.â€|Winston Churchill|Oliver Cromwell|Margaret Thatcher|William Blake
+Cytaty|Czyj to cytat? â€I ty, Brutusie, przeciw mnie?â€|Juliusz Cezar|Tytus|Marek Aureliusz|Herakliusz
+Cytaty|Czyj to cytat? â€(...) jeÅ›li nie potrafisz znieÅ›Ä‡ mnie kiedy jestem najgorsza, to cholernie pewne, Å¼e nie zasÅ‚ugujesz na mnie, kiedy jestem najlepsza.â€|Marylin Monroe|Jane Austen|Audrey Hepburn|Coco Chanel
+ZwierzÄ™ta|KtÃ³ry ptak potrafi lataÄ‡ do tyÅ‚u?|Koliber|Mewa|Jerzyk|Sikorka
+ZwierzÄ™ta|Gdzie umiejscowione jest serce krewetki?|W gÅ‚owie|W odwÅ‚oku|W tuÅ‚owiu|Nie ma serca
+ZwierzÄ™ta|KtÃ³ry ptak potrafi spaÄ‡ w locie?|Jerzyk|Koliber|Mewa|Sikorka
+ZwierzÄ™ta|KtÃ³re z tych zwierzÄ…t potrafi zmieniÄ‡ swojÄ… pÅ‚eÄ‡?|Ostryga|Pasikonik|Konik morski|Krewetka
+ZwierzÄ™ta|KtÃ³re z tych zwierzÄ…t NIE stosuje autotomii?|WÄ…Å¼|Jaszczurka|Rak|PajÄ™czak
+ZwierzÄ™ta|KtÃ³re z tych zwierzÄ…t uwaÅ¼ane jest za najszczÄ™Å›liwsze?|Kuoka|Kangur|WiewiÃ³rka|Jaszczurka
+ZwierzÄ™ta|KtÃ³ry z tych ssakÃ³w skÅ‚ada jaja?|Dziobak|MrÃ³wkojad|Delfin|Nietoperz
+ZwierzÄ™ta|KtÃ³ra gromada jest najliczniejsza?|Stawonogi|MiÄ™czaki|KrÄ™gowce|GÄ…bki
+ZwierzÄ™ta|KtÃ³re z tych pojÄ™Ä‡ w systematyce jest najbardziej ogÃ³lne?|Typ|Gromada|RzÄ…d|Rodzina
+ZwierzÄ™ta|Jaka jest przeciÄ™tna waga sÅ‚onia?|6 ton|1 tona|500 kg|10 ton
+Alkohole|W ktÃ³rym kraju na Å›wiecie spoÅ¼ywa siÄ™ najwiÄ™cej piwa w przeliczeniu na osobÄ™?|RPA|Czechy|Holandia|Niemcy
+Alkohole|Ile procent ma najmocniejsze piwo Å›wiata? (2017)|67,5|75,5|34,5|15,5
 Alkohole|Jaki alkohol jest najpopularniejszy w Meksyku?|Tequila|Piwo|Gin|Rum
-Alkohole|Gdzie powsta³a marka Bacardi?|Kuba|Bermudy|USA|Jamajka
-Alkohole|Jakiego alkoholu NIE mo¿na piæ przy nietolerancji glutenu?|Piwo|Cydr|Wino|Rum
-Alkohole|Który z tych alkoholi wytwarzany jest z trzciny cukrowej?|Rum|Wódka|Tequila|Gin
-Wierzenia|Ile dni trwa³ najkrótszy, w pe³ni uznany pontyfikat?|12|30|7|42
-Wierzenia|Ile lat w momencie wyboru mia³ najm³odszy papie¿?|18|20|28|30
-Wierzenia|Jerozolima NIE jest œwiêtym miejscem dla:|Buddyzm|Chrzeœcijañstwo|Islam|Judaizm
-Wierzenia|Która religia jest najpopularniejsza?|Chrzeœcijañstwo|Islam|Buddyzm|Judaizm
-Wierzenia|Która z tych religii jest najstarsza?|Hinduizm|Judaizm|Islam|Buddyzm
-Wierzenia|Jaki jest rzymski odpowiednik Hadesa, boga królestwa umar³ych?|Pluton|Jowisz|Neptun|Mars
-Wierzenia|Która religia jest religi¹ narodow¹ ¯ydów?|Judaizm|Isalm|Chrzeœcijañstwo|Buddyzm
-Wierzenia|Który z aposto³ów jako jedyny zmar³ œmierci¹ naturaln¹?|Jan|Mateusz|Piotr|Tomasz
-Wierzenia|Sk¹d pochodzi³ Jan Pawe³ I?|W³ochy|Polska|Niemcy|Brazylia
-Wierzenia|W mitologii greckiej kto by³ mê¿em i bratem Rei, bogini p³odnoœci?|Kronos|Hades|Zeus|Posejdon
-Nauka|Kto zosta³ uhonorowany nagrod¹ Nobla w 2 ró¿nych dziedzinach nauk?|Maria Sk³odowska-Curie|Linus Pauling|John Hall|Robert B. Laughlin
+Alkohole|Gdzie powstaÅ‚a marka Bacardi?|Kuba|Bermudy|USA|Jamajka
+Alkohole|Jakiego alkoholu NIE moÅ¼na piÄ‡ przy nietolerancji glutenu?|Piwo|Cydr|Wino|Rum
+Alkohole|KtÃ³ry z tych alkoholi wytwarzany jest z trzciny cukrowej?|Rum|WÃ³dka|Tequila|Gin
+Wierzenia|Ile dni trwaÅ‚ najkrÃ³tszy, w peÅ‚ni uznany pontyfikat?|12|30|7|42
+Wierzenia|Ile lat w momencie wyboru miaÅ‚ najmÅ‚odszy papieÅ¼?|18|20|28|30
+Wierzenia|Jerozolima NIE jest Å›wiÄ™tym miejscem dla:|Buddyzm|ChrzeÅ›cijaÅ„stwo|Islam|Judaizm
+Wierzenia|KtÃ³ra religia jest najpopularniejsza?|ChrzeÅ›cijaÅ„stwo|Islam|Buddyzm|Judaizm
+Wierzenia|KtÃ³ra z tych religii jest najstarsza?|Hinduizm|Judaizm|Islam|Buddyzm
+Wierzenia|Jaki jest rzymski odpowiednik Hadesa, boga krÃ³lestwa umarÅ‚ych?|Pluton|Jowisz|Neptun|Mars
+Wierzenia|KtÃ³ra religia jest religiÄ… narodowÄ… Å»ydÃ³w?|Judaizm|Isalm|ChrzeÅ›cijaÅ„stwo|Buddyzm
+Wierzenia|KtÃ³ry z apostoÅ‚Ã³w jako jedyny zmarÅ‚ Å›mierciÄ… naturalnÄ…?|Jan|Mateusz|Piotr|Tomasz
+Wierzenia|SkÄ…d pochodziÅ‚ Jan PaweÅ‚ I?|WÅ‚ochy|Polska|Niemcy|Brazylia
+Wierzenia|W mitologii greckiej kto byÅ‚ mÄ™Å¼em i bratem Rei, bogini pÅ‚odnoÅ›ci?|Kronos|Hades|Zeus|Posejdon
+Nauka|Kto zostaÅ‚ uhonorowany nagrodÄ… Nobla w 2 rÃ³Å¼nych dziedzinach nauk?|Maria SkÅ‚odowska-Curie|Linus Pauling|John Hall|Robert B. Laughlin
 Nauka|Kto znany jest z odkrycia penicyliny?|Alexander Fleming|Albert Einstein|Niels Bohr|Wolfgang Pauli
-Nauka|Od nazwiska którego naukowca pochodzi inna nazwa uk³adu okresowego pierwiastków?|Dmitrij Mendelejew|Niels Bohr|Wolfgang Pauli|Linus Pauling
-Nauka|Co jest g³ównym sk³adnikiem planety Ziema?|¯elazo|Tlen|Krzem|Magnez
-Nauka|Który z wymienionych nie jest odmian¹ alotropow¹ wêgla?|Kalcyt|Grafen|Fulereny|Diament
+Nauka|Od nazwiska ktÃ³rego naukowca pochodzi inna nazwa ukÅ‚adu okresowego pierwiastkÃ³w?|Dmitrij Mendelejew|Niels Bohr|Wolfgang Pauli|Linus Pauling
+Nauka|Co jest gÅ‚Ã³wnym skÅ‚adnikiem planety Ziema?|Å»elazo|Tlen|Krzem|Magnez
+Nauka|KtÃ³ry z wymienionych nie jest odmianÄ… alotropowÄ… wÄ™gla?|Kalcyt|Grafen|Fulereny|Diament
 Nauka|Jakim symbolem chemicznym oznaczony jest glin?|Al|Gl|G|A
-Nauka|Do jakiej grupy uk³adu okresowego nale¿y magnez?|Berylowce|Litowce|Borowce|Fluorowce
+Nauka|Do jakiej grupy ukÅ‚adu okresowego naleÅ¼y magnez?|Berylowce|Litowce|Borowce|Fluorowce
 Nauka|Ile jest niemetali?|18|16|15|20
-Nauka|Który z wymienionych ma najni¿sz¹ temperaturê topnienia (stopi³by siê na d³oni)?|Gal|Lit|Sód|Magnez
-Nauka|Co zawiera³a treœæ pierwszego wys³anego SMS’a?|¯yczenia œwi¹teczne|Pusta wiadomoœ|Test|yczenia urodzinowe
-Filmy - Seriale|W którym z wymienionych filmów zagrali Julia Roberts i Richard Gere?|Uciekaj¹ca panna m³oda|Notting Hill|Ocean’s Twelve|Chicago
-Filmy - Seriale|Scenariusz do jakiego filmu by³ prac¹ dyplomow¹ Bena Afflecka i Matta Damona?|Buntownik z wyboru|Szeregowiec Ryan|Armageddon|Pearl Harbor
-Filmy - Seriale|Którego z tych filmów NIE wyre¿yserowa³ Christopher Nolan?|Wyspa Tajemnic|Incepcja|Presti¿|Interstellar
-Filmy - Seriale|Który wokalista wyst¹pi³ w filmie „Zacznijmy od nowa”?|Adam Levine|Justin Timberlake|Eminem|Justin Bieber
-Filmy - Seriale|W którym z tych filmów NIE wyst¹pi³ Matt Damon?|Pamiêæ absolutna|Szeregowiec Ryan|Infiltracja|Marsjanin
-Filmy - Seriale|W jakiej kategorii Matt Damon otrzyma³ Oscara w 1998 roku?|Najlepszy Scenariusz Oryginalny|Najlepszy Aktor Pierwszoplanowy|Najlepszy Aktor Drugoplanowy|Najlepszy Film 
-Filmy - Seriale|Ile Oscarów zdoby³ „Titanic”?|11|9|8|6
+Nauka|KtÃ³ry z wymienionych ma najniÅ¼szÄ… temperaturÄ™ topnienia (stopiÅ‚by siÄ™ na dÅ‚oni)?|Gal|Lit|SÃ³d|Magnez
+Nauka|Co zawieraÅ‚a treÅ›Ä‡ pierwszego wysÅ‚anego SMSâ€™a?|Å»yczenia Å›wiÄ…teczne|Pusta wiadomoÅ›|Test|Å¹yczenia urodzinowe
+Filmy - Seriale|W ktÃ³rym z wymienionych filmÃ³w zagrali Julia Roberts i Richard Gere?|UciekajÄ…ca panna mÅ‚oda|Notting Hill|Oceanâ€™s Twelve|Chicago
+Filmy - Seriale|Scenariusz do jakiego filmu byÅ‚ pracÄ… dyplomowÄ… Bena Afflecka i Matta Damona?|Buntownik z wyboru|Szeregowiec Ryan|Armageddon|Pearl Harbor
+Filmy - Seriale|KtÃ³rego z tych filmÃ³w NIE wyreÅ¼yserowaÅ‚ Christopher Nolan?|Wyspa Tajemnic|Incepcja|PrestiÅ¼|Interstellar
+Filmy - Seriale|KtÃ³ry wokalista wystÄ…piÅ‚ w filmie â€Zacznijmy od nowaâ€?|Adam Levine|Justin Timberlake|Eminem|Justin Bieber
+Filmy - Seriale|W ktÃ³rym z tych filmÃ³w NIE wystÄ…piÅ‚ Matt Damon?|PamiÄ™Ä‡ absolutna|Szeregowiec Ryan|Infiltracja|Marsjanin
+Filmy - Seriale|W jakiej kategorii Matt Damon otrzymaÅ‚ Oscara w 1998 roku?|Najlepszy Scenariusz Oryginalny|Najlepszy Aktor Pierwszoplanowy|Najlepszy Aktor Drugoplanowy|Najlepszy Film 
+Filmy - Seriale|Ile OscarÃ³w zdobyÅ‚ â€Titanicâ€?|11|9|8|6
