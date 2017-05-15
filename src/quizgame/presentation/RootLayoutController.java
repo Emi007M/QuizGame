@@ -188,5 +188,46 @@ public class RootLayoutController implements Initializable {
         }
         ngController.initQuestion();
     }
+    
+    public void setDefat() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setController(ngController);
+            //loader.setResources(Dictionary.getBundle());
+            loader.setLocation(getClass().getResource("views/Defeat.fxml"));
+            // mainPane.getChildren().clear();
+            mainPane.setCenter((VBox) loader.load());
+            //mainFlow.getChildren().setAll((FlowPane) loader.load());
+
+            //  MenuController controller = (MenuController) loader.getController();
+            //   controller.setRootController(this);
+            //   controller.init();
+            
+            System.out.println("quizgame.presentation.RootLayoutController.setDefat()");
+        } catch (IOException ex) {
+            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        ngController.initDefeat();
+    }
+    public void setVictory() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setController(ngController);
+            //loader.setResources(Dictionary.getBundle());
+            loader.setLocation(getClass().getResource("views/Victory.fxml"));
+            // mainPane.getChildren().clear();
+            mainPane.setCenter((VBox) loader.load());
+            //mainFlow.getChildren().setAll((FlowPane) loader.load());
+
+            //  MenuController controller = (MenuController) loader.getController();
+            //   controller.setRootController(this);
+            //   controller.init();
+            
+            System.out.println("quizgame.presentation.RootLayoutController.setDefat()");
+        } catch (IOException ex) {
+            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        ngController.initVictory();
+    }
 
 }

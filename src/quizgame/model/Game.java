@@ -12,6 +12,7 @@ package quizgame.model;
 public class Game {
     
     private int timer;
+    private int totalQuestions;
     private int remainingQuestions;
     private QuestionService questionService;
     private int budget;
@@ -26,7 +27,8 @@ public class Game {
     
     
     public Game(){
-        remainingQuestions = 10;
+        totalQuestions = 4;
+        remainingQuestions = totalQuestions;
         questionService = new QuestionService();
         questionService.populateDB();
         budget = 1000000;
@@ -85,6 +87,10 @@ public class Game {
     public void setTimer(int timer) {
         this.timer = timer;
         this.currentTime = timer;
+    }
+
+    public int getTotalQuestions() {
+        return totalQuestions;
     }
 
     public int getRemainingQuestions() {

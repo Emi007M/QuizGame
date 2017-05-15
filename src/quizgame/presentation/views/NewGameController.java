@@ -78,6 +78,10 @@ public class NewGameController extends LayoutBaseController {
     private Label lostLabel;
     
 
+    @FXML
+    private JFXButton toMenuBtn;
+    @FXML
+    private Text victoryList;
     
 
     @Override
@@ -288,11 +292,12 @@ public class NewGameController extends LayoutBaseController {
     private void handleNextBtn() {
         if(getRootLayoutController().game.getBudget()==0){
             //show end loose view
-            
+            rootController.setDefat();
         }
         else{
             if(getRootLayoutController().game.getRemainingQuestions()==0){
                 //show end victory view
+                rootController.setVictory();
             }
             else{
                 //show next question - cartegory choice
@@ -333,6 +338,18 @@ public class NewGameController extends LayoutBaseController {
         
         //update youu lost label
         lostLabel.setText("You've lost "+formatter.format(moneyLost)+"$");
+    }
+
+    public void initDefeat() {
+        toMenuBtn.setOnAction(e-> rootController.setMenu());
+    }
+
+    public void initVictory() {
+        
+        toMenuBtn.setOnAction(e-> rootController.setMenu());
+        
+        victoryList.setText("todo");
+        
     }
 
   

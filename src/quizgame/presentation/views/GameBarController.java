@@ -69,14 +69,14 @@ public class GameBarController extends ViewBaseController {
     }
 
     private void updateLabelQuestionNo(int t) {
-        labelQuestionNo.setText("Question: " + t + "/10");
+        labelQuestionNo.setText("Question: " + t + "/" + parentController.getRootLayoutController().game.getTotalQuestions());
     }
 
     public void updateBar() {
         System.out.println("quizgame.presentation.views.GameBarController.updateBar()");
         int time = parentController.getRootLayoutController().game.getTimer();
         int money = parentController.getRootLayoutController().game.getBudget();
-        int question = 10 - parentController.getRootLayoutController().game.getRemainingQuestions();
+        int question = parentController.getRootLayoutController().game.getTotalQuestions() - parentController.getRootLayoutController().game.getRemainingQuestions();
         System.out.println(time + " " + money + " " + question);
         updateLabelTime(time);
         updateLabelMoney(money);
