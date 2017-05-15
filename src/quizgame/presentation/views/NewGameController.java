@@ -208,7 +208,11 @@ public class NewGameController extends LayoutBaseController {
         a2_txt.setText(answers.get(1));
         a3_txt.setText(answers.get(2));
         a4_txt.setText(answers.get(3));
-
+        
+        a1_bet.setText("Bet: " + formatter.format(0) + "$");
+        a2_bet.setText("Bet: " + formatter.format(0) + "$");
+        a3_bet.setText("Bet: " + formatter.format(0) + "$");
+        a4_bet.setText("Bet: " + formatter.format(0) + "$");
         gbController.startTimer();
 
         attachBetButtonsActions();
@@ -232,42 +236,52 @@ public class NewGameController extends LayoutBaseController {
 
     private void handleA1AddBtn() {
         int bet = getRootLayoutController().game.changeBet(0, 10000);
+        
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        getRootLayoutController().game.setBudget(moneyLeftToBet);
     }
 
     private void handleA1DownBtn() {
         int bet = getRootLayoutController().game.changeBet(0, -10000);
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     private void handleA2AddBtn() {
         int bet = getRootLayoutController().game.changeBet(1, 10000);
         a2_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     private void handleA2DownBtn() {
         int bet = getRootLayoutController().game.changeBet(1, -10000);
         a2_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     private void handleA3AddBtn() {
         int bet = getRootLayoutController().game.changeBet(2, 10000);
         a3_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     private void handleA3DownBtn() {
         int bet = getRootLayoutController().game.changeBet(2, -10000);
         a3_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     private void handleA4AddBtn() {
         int bet = getRootLayoutController().game.changeBet(3, 10000);
         a4_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     private void handleA4DownBtn() {
         int bet = getRootLayoutController().game.changeBet(3, -10000);
         a4_bet.setText("Bet: " + formatter.format(bet) + "$");
+        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
     }
 
     public void detachBetButtonsActions() {
@@ -312,19 +326,19 @@ public class NewGameController extends LayoutBaseController {
         
         int ans = 0;
         
-        if(a1_txt.getText()==right) {
+        if(a1_txt.getText().equals(right)) {
             a1_txt.getStyleClass().add("correct");
             ans = 0;    
         }
-        else if(a2_txt.getText()==right) {
+        else if(a2_txt.getText().equals(right)) {
             a2_txt.getStyleClass().add("correct");
             ans = 1;  
         }
-        else if(a3_txt.getText()==right) {
+        else if(a3_txt.getText().equals(right)) {
             a3_txt.getStyleClass().add("correct");
             ans = 2;  
         }
-        else if(a4_txt.getText()==right) {
+        else if(a4_txt.getText().equals(right)) {
             a4_txt.getStyleClass().add("correct");
             ans = 3;  
         }
@@ -337,7 +351,7 @@ public class NewGameController extends LayoutBaseController {
         gbController.updateMoney();
         
         //update youu lost label
-        lostLabel.setText("You've lost "+formatter.format(moneyLost)+"$");
+        lostLabel.setText("You have "+ formatter.format(getRootLayoutController().game.getBudget()) +"$ left");
     }
 
     public void initDefeat() {
@@ -348,7 +362,7 @@ public class NewGameController extends LayoutBaseController {
         
         toMenuBtn.setOnAction(e-> rootController.setMenu());
         
-        victoryList.setText("todo");
+        victoryList.setText("You won " + formatter.format(getRootLayoutController().game.getBudget() + "$"));
         
     }
 

@@ -77,6 +77,9 @@ public class Game {
         return bets[number];
     }
     
+    public int sumBets(){
+        return bets[0] + bets[1]+bets[2]+bets[3];
+    }
     
     
 

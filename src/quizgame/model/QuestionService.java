@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -28,9 +29,11 @@ public class QuestionService {
 	}
 	
 	public Question getRandomQuestionByCategory(String category){
+           
 		Collections.shuffle(questions);
+                System.out.println(questions.toString());
 		for(Question q : questions){
-			if(q.getCategory()==category && q.isUsed()==false){
+			if(q.getCategory().equals(category) && q.isUsed()==false){
                                 q.setUsed(true);
                                 updateCategories(category);
 				return q;
