@@ -94,6 +94,12 @@
         </GridPane>
          
          
+        <HBox fx:id="navbar">
+            <children>
+                <Label fx:id="lostLabel" text="You've lost x$" />
+                <JFXButton fx:id="nextBtn" text=">" />
+            </children>
+        </HBox>
        
       
   

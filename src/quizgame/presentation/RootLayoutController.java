@@ -1,6 +1,5 @@
 package quizgame.presentation;
 
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -29,8 +28,6 @@ public class RootLayoutController implements Initializable {
 
     private Stage primaryStage;
 
-    
-
     @FXML
     private BorderPane mainPane;
 //    private ManageTournamentsTabController manageTournamentsController;
@@ -40,11 +37,11 @@ public class RootLayoutController implements Initializable {
 //    @FXML
 //    private Tab tabSettings;
 //    private SettingsTabController settingsController;
-    
+
     NewGameController ngController;
 
     boolean initialized = false;
-    
+
     public Game game;
 
     @Override
@@ -69,7 +66,7 @@ public class RootLayoutController implements Initializable {
 //        } catch (IOException ex) {
 //            Logger.getLogger(RootLayoutController.class.getName()).log(Level.SEVERE, null, ex);
 //        }
-setMenu();
+        setMenu();
 //        tabs.getTabs().get(1).setDisable(true);
 //        tabs.getTabs().get(2).setDisable(true);
 //        tabs.getTabs().get(3).setDisable(true);
@@ -78,7 +75,7 @@ setMenu();
 
     public void init() {
         System.out.println("quizgame.presentation.RootLayoutController.init()");
-       // currentTournamentController.init();
+        // currentTournamentController.init();
     }
 
     public void setPrimaryStage(Stage primaryStage) {
@@ -88,8 +85,7 @@ setMenu();
     public Stage getPrimaryStage() {
         return primaryStage;
     }
-    
-    
+
     public void setMenu() {
         try {
             FXMLLoader loader = new FXMLLoader();
@@ -103,16 +99,16 @@ setMenu();
             controller.setRootController(this);
 
             controller.init();
-System.out.println("quizgame.presentation.RootLayoutController.setMenu()");
+            System.out.println("quizgame.presentation.RootLayoutController.setMenu()");
         } catch (IOException ex) {
             Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     public void setNewGame() {
-        
+
         game = new Game();
-        
+
         try {
             FXMLLoader loader = new FXMLLoader();
             //loader.setResources(Dictionary.getBundle());
@@ -125,7 +121,7 @@ System.out.println("quizgame.presentation.RootLayoutController.setMenu()");
             ngController.setRootController(this);
 
             ngController.init();
-System.out.println("quizgame.presentation.RootLayoutController.setNewGame()");
+            System.out.println("quizgame.presentation.RootLayoutController.setNewGame()");
         } catch (IOException ex) {
             Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -133,59 +129,60 @@ System.out.println("quizgame.presentation.RootLayoutController.setNewGame()");
 
     public void setChooseCategory() {
         //append top bar
-        try {
-            FXMLLoader loader = new FXMLLoader();
-            //loader.setResources(Dictionary.getBundle());
-            loader.setLocation(getClass().getResource("views/GameBar.fxml"));
-            mainPane.getChildren().clear();
-            mainPane.setTop((HBox) loader.load());
-            //mainFlow.getChildren().setAll((FlowPane) loader.load());
+        if (ngController.gbController == null) {
+            try {
+                FXMLLoader loader = new FXMLLoader();
+                //loader.setResources(Dictionary.getBundle());
+                loader.setLocation(getClass().getResource("views/GameBar.fxml"));
+                mainPane.getChildren().clear();
+                mainPane.setTop((HBox) loader.load());
+                //mainFlow.getChildren().setAll((FlowPane) loader.load());
 
-            GameBarController controller = (GameBarController) loader.getController();
-            controller.setParentController(ngController);
-            controller.init();
-            ngController.setGameBarController(controller);
-        } catch (IOException ex) {
-            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+                GameBarController controller = (GameBarController) loader.getController();
+                controller.setParentController(ngController);
+                controller.init();
+                ngController.setGameBarController(controller);
+            } catch (IOException ex) {
+                Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
+
         //set new view
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setController(ngController);
             //loader.setResources(Dictionary.getBundle());
             loader.setLocation(getClass().getResource("views/ChoosingCategory.fxml"));
-           // mainPane.getChildren().clear();
+            // mainPane.getChildren().clear();
             mainPane.setCenter((VBox) loader.load());
             //mainFlow.getChildren().setAll((FlowPane) loader.load());
 
-          //  MenuController controller = (MenuController) loader.getController();
-         //   controller.setRootController(this);
-
-         //   controller.init();
-System.out.println("quizgame.presentation.RootLayoutController.ChoosingCategory()");
+            //  MenuController controller = (MenuController) loader.getController();
+            //   controller.setRootController(this);
+            //   controller.init();
+            System.out.println("quizgame.presentation.RootLayoutController.ChoosingCategory()");
         } catch (IOException ex) {
             Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         ngController.initCategories();
         ngController.gbController.updateBar();
     }
 
     public void setShowQuestion() {
-          try {
+        try {
             FXMLLoader loader = new FXMLLoader();
             loader.setController(ngController);
             //loader.setResources(Dictionary.getBundle());
             loader.setLocation(getClass().getResource("views/Question.fxml"));
-           // mainPane.getChildren().clear();
+            // mainPane.getChildren().clear();
             mainPane.setCenter((VBox) loader.load());
             //mainFlow.getChildren().setAll((FlowPane) loader.load());
 
-          //  MenuController controller = (MenuController) loader.getController();
-         //   controller.setRootController(this);
-
-         //   controller.init();
-System.out.println("quizgame.presentation.RootLayoutController.setShowQuestion()");
+            //  MenuController controller = (MenuController) loader.getController();
+            //   controller.setRootController(this);
+            //   controller.init();
+            System.out.println("quizgame.presentation.RootLayoutController.setShowQuestion()");
         } catch (IOException ex) {
             Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
         }

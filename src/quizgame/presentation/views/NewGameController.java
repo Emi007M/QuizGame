@@ -69,6 +69,14 @@ public class NewGameController extends LayoutBaseController {
     private JFXButton a1up, a1down, a2up, a2down, a3up, a3down, a4up, a4down;
 
     public GameBarController gbController;
+    
+    @FXML
+    private HBox navbar;
+    @FXML
+    private JFXButton nextBtn;
+    @FXML
+    private Label lostLabel;
+    
 
     
 
@@ -155,6 +163,9 @@ public class NewGameController extends LayoutBaseController {
         } else {
             this.categories.getChildren().remove(Cat2);
         }
+        
+        
+        
     }
 
     private void handleCat1Btn() {
@@ -197,6 +208,10 @@ public class NewGameController extends LayoutBaseController {
         gbController.startTimer();
 
         attachBetButtonsActions();
+        
+        nextBtn.setOnAction(e -> handleNextBtn());
+        navbar.setVisible(false);
+        navbar.setManaged(false);
     }
 
     private void attachBetButtonsActions() {
@@ -262,5 +277,64 @@ public class NewGameController extends LayoutBaseController {
         a4down.setOnAction(null);
 
     }
+    
+    public void showNextBtn(){
+        navbar.setVisible(true);
+        navbar.setManaged(true);
+        System.out.println("quizgame.presentation.views.NewGameController.showNextBtn()");
+        
+    }
+
+    private void handleNextBtn() {
+        if(getRootLayoutController().game.getBudget()==0){
+            //show end loose view
+            
+        }
+        else{
+            if(getRootLayoutController().game.getRemainingQuestions()==0){
+                //show end victory view
+            }
+            else{
+                //show next question - cartegory choice
+                //getRootLayoutController().game.nextQuestion();
+                rootController.setChooseCategory();
+            }
+        }
+    }
+
+    void showCorrect() {
+        String right = getRootLayoutController().game.getCurrentQuestion().getRightAnswer();
+        
+        int ans = 0;
+        
+        if(a1_txt.getText()==right) {
+            a1_txt.getStyleClass().add("correct");
+            ans = 0;    
+        }
+        else if(a2_txt.getText()==right) {
+            a2_txt.getStyleClass().add("correct");
+            ans = 1;  
+        }
+        else if(a3_txt.getText()==right) {
+            a3_txt.getStyleClass().add("correct");
+            ans = 2;  
+        }
+        else if(a4_txt.getText()==right) {
+            a4_txt.getStyleClass().add("correct");
+            ans = 3;  
+        }
+        System.out.println("quizgame.presentation.views.NewGameController.showCorrect() - "+(ans+1));
+        
+        int newMoney = getRootLayoutController().game.changeBet(ans, 0);
+        int moneyLost = getRootLayoutController().game.getBudget() - newMoney;
+        //update new budget
+        getRootLayoutController().game.setBudget(newMoney);
+        gbController.updateMoney();
+        
+        //update youu lost label
+        lostLabel.setText("You've lost "+formatter.format(moneyLost)+"$");
+    }
+
+  
 
 }

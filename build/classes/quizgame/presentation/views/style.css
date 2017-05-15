@@ -139,6 +139,11 @@
     -fx-font-size:22; 
 }
 
+#answers {
+    -fx-margin: 0;
+    -fx-padding: 0;
+}
+
 #answers label {
       -fx-font-size:16;
     
@@ -147,7 +152,7 @@
 #answers HBox {
       
     -fx-pref-width: 400;
-    -fx-pref-height: 200;
+    -fx-pref-height: 150;
     -fx-background-color:rgba(58,86,14,0.2);
 }
 #answers HBox .label{
@@ -157,7 +162,9 @@
 }
 #answers .button {
     -fx-pref-width: 50;
-    -fx-pref-height: 50;
+    -fx-pref-height: 30;
+    -fx-padding: 5;
+    
 }
 #answers HBox VBox {
     -fx-spacing: 20;
@@ -169,4 +176,19 @@
 }
 #question_cat {
     padding-top: 20px;
+}
+
+
+#navbar {
+    -fx-alignment: center ;
+    -fx-padding: 0;
+    -fx-spacing:10;
+}
+
+#navbar .button {
+    -fx-pref-width: 50;
+}
+
+#answers .correct {
+     -fx-fill:greenyellow;
 }
