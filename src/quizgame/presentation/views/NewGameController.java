@@ -35,6 +35,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import quizgame.model.Question;
 import quizgame.presentation.LayoutBaseController;
@@ -203,6 +204,9 @@ public class NewGameController extends LayoutBaseController {
 
         question_cat.setText("Category: " + q.getCategory());
         question_txt.setText(q.getQuestion());
+        
+        question_txt.setWrappingWidth(800);
+        question_txt.setTextAlignment(TextAlignment.CENTER);
 
         a1_txt.setText(answers.get(0));
         a2_txt.setText(answers.get(1));
@@ -218,8 +222,9 @@ public class NewGameController extends LayoutBaseController {
         attachBetButtonsActions();
         
         nextBtn.setOnAction(e -> handleNextBtn());
-        navbar.setVisible(false);
-        navbar.setManaged(false);
+        hideNextBtn();
+        
+        updateBetAnswersLabel();
     }
 
     private void attachBetButtonsActions() {
@@ -233,54 +238,65 @@ public class NewGameController extends LayoutBaseController {
         a4down.setOnAction(e -> handleA4DownBtn());
 
     }
+    
+    private void updateBetAnswersLabel(){
+        int moneyLeftToBet = getRootLayoutController().game.getBudget() - getRootLayoutController().game.sumBets();
+        if(moneyLeftToBet>0){
+            question_ans.setText("Bet Answers (still left "+formatter.format(moneyLeftToBet)+"$):");
+            hideNextBtn();
+        }
+        else{
+            question_ans.setText("Bet Answers:");
+            showNextBtn();
+        }
+    }
 
     private void handleA1AddBtn() {
         int bet = getRootLayoutController().game.changeBet(0, 10000);
-        
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = getRootLayoutController().game.getBudget() - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA1DownBtn() {
         int bet = getRootLayoutController().game.changeBet(0, -10000);
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA2AddBtn() {
         int bet = getRootLayoutController().game.changeBet(1, 10000);
         a2_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA2DownBtn() {
         int bet = getRootLayoutController().game.changeBet(1, -10000);
         a2_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA3AddBtn() {
         int bet = getRootLayoutController().game.changeBet(2, 10000);
         a3_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA3DownBtn() {
         int bet = getRootLayoutController().game.changeBet(2, -10000);
         a3_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA4AddBtn() {
         int bet = getRootLayoutController().game.changeBet(3, 10000);
         a4_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     private void handleA4DownBtn() {
         int bet = getRootLayoutController().game.changeBet(3, -10000);
         a4_bet.setText("Bet: " + formatter.format(bet) + "$");
-        int moneyLeftToBet = 1000000 - getRootLayoutController().game.sumBets();
+        updateBetAnswersLabel();
     }
 
     public void detachBetButtonsActions() {
@@ -301,8 +317,21 @@ public class NewGameController extends LayoutBaseController {
         System.out.println("quizgame.presentation.views.NewGameController.showNextBtn()");
         
     }
+    public void hideNextBtn(){
+        navbar.setVisible(false);
+        navbar.setManaged(false);
+        System.out.println("quizgame.presentation.views.NewGameController.hideNextBtn()");
+        
+    }
 
     private void handleNextBtn() {
+        //stop timer
+        if(getRootLayoutController().game.getCurrentTime()>0){
+            handleStopTimerBtn();
+            return;
+        }
+            
+        
         if(getRootLayoutController().game.getBudget()==0){
             //show end loose view
             rootController.setDefat();
@@ -367,10 +396,15 @@ public class NewGameController extends LayoutBaseController {
         
         toMenuBtn.setOnAction(e-> rootController.setMenu());
         
-        victoryList.setText("You won " + formatter.format(getRootLayoutController().game.getBudget() + "$"));
+        victoryList.setText("You won " + formatter.format(getRootLayoutController().game.getBudget()) + "$");
         
     }
 
+    
+    public void handleStopTimerBtn(){
+        gbController.stopTimer();
+        getRootLayoutController().game.setCurrentTime(0);
+    }
   
 
 }

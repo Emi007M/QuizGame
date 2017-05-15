@@ -53,6 +53,8 @@ public class GameBarController extends ViewBaseController {
     public void initialize(URL location, ResourceBundle resources) {
         init();
     }
+    
+    private Timeline timeline;
 
     @Override
     public void init() {
@@ -91,7 +93,7 @@ public class GameBarController extends ViewBaseController {
     public void startTimer() {
         parentController.getRootLayoutController().game.resetCurrentTimer();
         int repeats = parentController.getRootLayoutController().game.getTimer();
-        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), ev -> {
+        timeline = new Timeline(new KeyFrame(Duration.seconds(1), ev -> {
             int time = parentController.getRootLayoutController().game.getRunningTimer();
             updateLabelTime(time);
         }));
@@ -115,6 +117,17 @@ public class GameBarController extends ViewBaseController {
 //        }
 //    }, 0, 1000);
 
+    }
+    
+    public void stopTimer(){
+        if (timeline!=null){
+            timeline.stop();
+            
+            NewGameController c = (NewGameController) parentController;
+            c.detachBetButtonsActions();
+            c.showCorrect();
+            c.showNextBtn();    
+        }
     }
 
 }

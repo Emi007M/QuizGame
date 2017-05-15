@@ -39,7 +39,7 @@
                 <children>  
                     <VBox>
                         <children>
-                            <Label fx:id="a1_txt" text="-" />
+                            <Label fx:id="a1_txt" text="-" styleClass="questionL" />
                             <Label fx:id="a1_bet" text="Bet: -" />
                         </children>
                     </VBox>
@@ -53,7 +53,7 @@
                 <children>
                     <VBox>
                         <children>
-                            <Label fx:id="a2_txt" text="-" />
+                            <Label fx:id="a2_txt" text="-" styleClass="questionL" />
                             <Label fx:id="a2_bet" text="Bet: -" />
                         </children>
                     </VBox>
@@ -67,7 +67,7 @@
                 <children>
                     <VBox>
                         <children>
-                            <Label fx:id="a3_txt" text="-" />
+                            <Label fx:id="a3_txt" text="-" styleClass="questionL" />
                             <Label fx:id="a3_bet" text="Bet: -" />
                         </children>
                     </VBox>
@@ -81,7 +81,7 @@
                 <children>
                     <VBox>
                         <children>
-                            <Label fx:id="a4_txt" text="-" />
+                            <Label fx:id="a4_txt" text="-" styleClass="questionL" />
                             <Label fx:id="a4_bet" text="Bet: -" />
                         </children>
                     </VBox>
@@ -93,13 +93,17 @@
 
         </GridPane>
          
-         
+         <HBox  fx:id="placeholder" >
+             <children>
+                 <Label text=" " />
         <HBox fx:id="navbar">
             <children>
-                <Label fx:id="lostLabel" text="You've lost x$" />
+                <Label fx:id="lostLabel" text="" />
                 <JFXButton fx:id="nextBtn" text=">" />
             </children>
         </HBox>
+             </children>
+         </HBox>
        
       
   

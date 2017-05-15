@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="QuizGame.jar" size="245017" download="eager" />
+    <jar href="QuizGame.jar" size="245558" download="eager" />
     <jar href="lib\fontawesomefx-8.0.0.jar" size="65296" download="eager" />
     <jar href="lib\jfoenix-1.4.0.jar" size="2363143" download="eager" />
   </resources>
