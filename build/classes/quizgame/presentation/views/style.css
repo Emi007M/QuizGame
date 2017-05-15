@@ -112,15 +112,15 @@
 
 #gameBar {
     -fx-background-color:rgba(58,86,14,0.6);
-    
+
     -fx-pref-width: 1000;
     -fx-margin: 0 0 0 10px;
 }
 
 #gameBar .label {
-    
+
     -fx-font-size:16;
-    
+
     -fx-font-weight:normal;
 }
 
@@ -128,12 +128,12 @@
 #question_txt {
     -fx-font-size:22;   
     -fx-fill: rgb(58,86,14); 
- 
+
     -fx-padding: 15px;
     -fx-background-color:rgba(58,86,14,0.2);
-        -fx-margin: 0 0 0 20px;
-        -fx-max-wdth: 800px;
-        -fx-text-wrap: true;
+    -fx-margin: 0 0 0 20px;
+    -fx-max-wdth: 800px;
+    -fx-text-wrap: true;
 }
 #question_que, #question_ans {
     -fx-font-size:22; 
@@ -145,37 +145,37 @@
 }
 
 #answers .label {
-      -fx-font-size:18;
-    
-/*    -fx-font-weight:normal;*/
+    -fx-font-size:18;
+
+    /*    -fx-font-weight:normal;*/
 }
 #answers .label.questionL {
     -fx-font-size: 24;
 }
 #answers HBox {
-      
+
     -fx-pref-width: 400;
     -fx-pref-height: 150;
     -fx-background-color:rgba(58,86,14,0.2);
 }
 #answers HBox .label{
-      
+
     -fx-pref-width: 340;
-    
+
 }
 #answers .button {
     -fx-pref-width: 50;
     -fx-min-width: 50;
     -fx-pref-height: 30;
     -fx-padding: 5;
-    
+
 }
 #answers HBox VBox {
     -fx-spacing: 20;
 }
 #a1_bet,#a2_bet,#a3_bet,#a4_bet {
-/*    -fx-font-size:33;*/
-    
+    /*    -fx-font-size:33;*/
+
     -fx-fill:rgba(58,86,14,1);
 }
 #question_cat {
@@ -203,7 +203,7 @@
 }
 
 #placeholder {
-    
+
     -fx-max-height: 70px;
     -fx-min-height: 70px;
     -fx-pref-height: 70px;

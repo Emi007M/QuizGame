@@ -105,17 +105,6 @@ public class GameBarController extends ViewBaseController {
             c.showNextBtn();
         });
         timeline.play();
-        //final int time = parentController.getRootLayoutController().game.getCurrentTime();
-//         new Timer().schedule(
-//    new TimerTask() {
-//
-//        @Override
-//        public void run() {
-//            int time = parentController.getRootLayoutController().game.getRunningTimer();
-//            updateLabelTime(time);
-//            if(time==0) this.cancel();
-//        }
-//    }, 0, 1000);
 
     }
     

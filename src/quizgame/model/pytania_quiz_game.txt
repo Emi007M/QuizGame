@@ -1,6 +1,6 @@
 ﻿Państwa - Miasta|Ile stanów ma Australia?|6|8|4|2
 Państwa - Miasta|Który z wymienionych krajów jest podwójnie śródlądowy?|Uzbekistan|Macedonia|Kenia|Słowacja
-Państwa - Miasta|Jakiego koluru NIE MA na fladze Kuby?|Żółty|Czerwony|Biały|Niebieski
+Państwa - Miasta|Jakiego koloru NIE MA na fladze Kuby?|Żółty|Czerwony|Biały|Niebieski
 Państwa - Miasta|Które z wymienionych państw jest największe biorąc pod uwagę liczbę ludności?|Chiny|USA|Rosja|Indie
 Państwa - Miasta|Które z wymienionych państw jest największe biorąc pod uwagę powierzchnię?|Rosja|USA|Kanada|Australia
 Państwa - Miasta|Które państwo odwraca flagę w czasie wojny?|Filipiny|Indie|Izrael|Kuwejt

@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.FlowPane;
-import quizgame.presentation.views.GameBarController;
 
 /**
  *
@@ -18,7 +17,7 @@ public abstract class LayoutBaseController implements Initializable {
     protected FlowPane mainFlow;
 
     protected RootLayoutController rootController;
-    
+
     public static DecimalFormat formatter;
 
     @Override
@@ -33,6 +32,5 @@ public abstract class LayoutBaseController implements Initializable {
     public RootLayoutController getRootLayoutController() {
         return rootController;
     }
-
 
 }

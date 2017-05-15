@@ -14,26 +14,25 @@
 <VBox fx:id="rootPane" 
       alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
       prefHeight="600.0" prefWidth="800.0" spacing="20.0" 
-      xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" 
-    >
+      xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
     
     
-     <children>
+    <children>
          
-         <Label  text="Choose category" />
+        <Label  text="Choose category" />
          
-         <HBox fx:id="categories" 
-      alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
-       spacing="20.0"    >
-             <children>
-                 <JFXButton fx:id="Cat1" mnemonicParsing="false" prefHeight="151.0" prefWidth="150.0" text="cat1" />
-                 <JFXButton fx:id="Cat2" mnemonicParsing="false" prefHeight="151.0" prefWidth="150.0" text="cat2" />
+        <HBox fx:id="categories" 
+               alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+               spacing="20.0"    >
+            <children>
+                <JFXButton fx:id="Cat1" mnemonicParsing="false" prefHeight="151.0" prefWidth="150.0" text="cat1" />
+                <JFXButton fx:id="Cat2" mnemonicParsing="false" prefHeight="151.0" prefWidth="150.0" text="cat2" />
        
-             </children>
-         </HBox>
+            </children>
+        </HBox>
       
   
-   </children>
+    </children>
         
     <stylesheets>
         <URL value="@style.css" />

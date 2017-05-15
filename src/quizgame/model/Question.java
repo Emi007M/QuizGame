@@ -27,7 +27,7 @@ public class Question {
         this.wrongAnswer3 = wrongAnswer3;
         this.used = false;
     }
-    
+
     public ArrayList<String> getAnswers() {
         ArrayList<String> answers = new ArrayList<>();
         answers.add(rightAnswer);

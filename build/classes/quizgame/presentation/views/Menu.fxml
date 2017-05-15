@@ -17,18 +17,18 @@
       fx:controller="quizgame.presentation.views.MenuController">
     
     
-     <children>
-      <JFXButton fx:id="BtnNewGame" mnemonicParsing="false" prefHeight="51.0" prefWidth="270.0" text="New Game">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="BtnQuit" mnemonicParsing="false" prefHeight="51.0" prefWidth="270.0" text="Quit">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </JFXButton>
-   </children>
+    <children>
+        <JFXButton fx:id="BtnNewGame" mnemonicParsing="false" prefHeight="51.0" prefWidth="270.0" text="New Game">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="BtnQuit" mnemonicParsing="false" prefHeight="51.0" prefWidth="270.0" text="Quit">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </JFXButton>
+    </children>
         
     <stylesheets>
         <URL value="@style.css" />

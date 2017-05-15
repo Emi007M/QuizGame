@@ -14,15 +14,17 @@
       spacing="50.0" 
       xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" 
       fx:controller="quizgame.presentation.views.GameBarController">
-    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
     
-     <children>
+    <children>
          
-         <Label fx:id="labelTime" text="Time: xxs" />
-         <Label fx:id="labelMoney" text="Money: xx$" />
-         <Label fx:id="labelQuestionNo" text="Question 1/10" />
+        <Label fx:id="labelTime" text="Time: xxs" />
+        <Label fx:id="labelMoney" text="Money: xx$" />
+        <Label fx:id="labelQuestionNo" text="Question 1/10" />
       
-   </children>
+    </children>
         
     <stylesheets>
         <URL value="@style.css" />

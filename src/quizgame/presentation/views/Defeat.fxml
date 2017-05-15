@@ -14,14 +14,13 @@
 <VBox fx:id="rootPane" 
       alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
       prefHeight="600.0" prefWidth="800.0" spacing="20.0" 
-      xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" 
-    >
+      xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" >
     
     
-     <children>
+    <children>
          
-         <Label  text="DEFEAT" />
-         <Label  text="you didn't manage to answer 10 questions" />
+        <Label  text="DEFEAT" />
+        <Label  text="you didn't manage to answer 10 questions" />
 
         
         
@@ -29,7 +28,7 @@
                 
       
   
-   </children>
+    </children>
         
     <stylesheets>
         <URL value="@style.css" />

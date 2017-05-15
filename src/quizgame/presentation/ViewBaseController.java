@@ -36,11 +36,5 @@ public abstract class ViewBaseController implements Initializable {
     public void setParentController(LayoutBaseController r) {
         parentController = r;
     }
-//
-//    protected void setBackBtn() {
-//        gobackBtn.getStyleClass().add("icons");
-//        gobackBtn.setText("\uf053");
-//        gobackBtn.setOnAction(e -> tabController.init());
-//        System.out.println("quizgame.presentation.ViewBaseController.setBackBtn()");
-//    }
+
 }

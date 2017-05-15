@@ -1,20 +1,9 @@
 package quizgame.presentation.views;
 
 import com.jfoenix.controls.JFXButton;
-import quizgame.presentation.ViewBaseController;
-import java.io.IOException;
-import java.io.Serializable;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
-import java.io.IOException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -23,20 +12,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
-import javafx.stage.Stage;
 import quizgame.model.Question;
 import quizgame.presentation.LayoutBaseController;
 
@@ -51,8 +31,7 @@ public class NewGameController extends LayoutBaseController {
 
     @FXML
     private Button BtnEasy, BtnMedium, BtnHard;
-//     @FXML
-//    private Label labelTime, labelMoney, labelQuestionNo;
+
     @FXML
     private Button Cat1, Cat2;
     @FXML
@@ -70,20 +49,18 @@ public class NewGameController extends LayoutBaseController {
     private JFXButton a1up, a1down, a2up, a2down, a3up, a3down, a4up, a4down;
 
     public GameBarController gbController;
-    
+
     @FXML
     private HBox navbar;
     @FXML
     private JFXButton nextBtn;
     @FXML
     private Label lostLabel;
-    
 
     @FXML
     private JFXButton toMenuBtn;
     @FXML
     private Text victoryList;
-    
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -110,34 +87,8 @@ public class NewGameController extends LayoutBaseController {
 
     }
 
-//    public void updateList() {
-//        //get tournaments from folder
-//        ArrayList<Serializable> objs;
-//        objs = Serializator.readAllFromFolder("tournaments");
-//
-//        //print tournaments
-//        for (Serializable s : objs) {
-//            Tournament t = (Tournament) s;
-//
-//            Button btn = new Button("(" + t.getDate() + ") " + t.getTitle());
-//            btn.getStyleClass().add("tournamentBtn");
-//            if (CurrentTournament.getTournament() != null
-//                    && t.getDate().equals(CurrentTournament.getTournament().getDate())
-//                    && t.getTitle().equals(CurrentTournament.getTournament().getTitle())) {
-//                btn.getStyleClass().add("current");
-//            }
-//            btn.setOnAction(e -> setTournament(t));
-//
-//            VBox.getChildren().add(btn);
-//
-//        }
-//    }
-//    private void setTournament(Tournament t) {
-//        CurrentTournament.setTournament(t);
-//        tabController.init();
-//    }
 
-    /*--Button views initialization--*/
+    /*--Difficulty level button views initialization--*/
     private void handleEasyBtn() {
         getRootLayoutController().game.setTimer(60);
         getRootLayoutController().setChooseCategory();
@@ -168,9 +119,7 @@ public class NewGameController extends LayoutBaseController {
         } else {
             this.categories.getChildren().remove(Cat2);
         }
-        
-        
-        
+
     }
 
     private void handleCat1Btn() {
@@ -198,13 +147,14 @@ public class NewGameController extends LayoutBaseController {
         }
     }
 
+    /*--question--*/
     public void initQuestion() {
         Question q = getRootLayoutController().game.generateQuestion();
         ArrayList<String> answers = q.getAnswers();
 
         question_cat.setText("Category: " + q.getCategory());
         question_txt.setText(q.getQuestion());
-        
+
         question_txt.setWrappingWidth(800);
         question_txt.setTextAlignment(TextAlignment.CENTER);
 
@@ -212,7 +162,7 @@ public class NewGameController extends LayoutBaseController {
         a2_txt.setText(answers.get(1));
         a3_txt.setText(answers.get(2));
         a4_txt.setText(answers.get(3));
-        
+
         a1_bet.setText("Bet: " + formatter.format(0) + "$");
         a2_bet.setText("Bet: " + formatter.format(0) + "$");
         a3_bet.setText("Bet: " + formatter.format(0) + "$");
@@ -220,10 +170,10 @@ public class NewGameController extends LayoutBaseController {
         gbController.startTimer();
 
         attachBetButtonsActions();
-        
+
         nextBtn.setOnAction(e -> handleNextBtn());
         hideNextBtn();
-        
+
         updateBetAnswersLabel();
     }
 
@@ -238,14 +188,13 @@ public class NewGameController extends LayoutBaseController {
         a4down.setOnAction(e -> handleA4DownBtn());
 
     }
-    
-    private void updateBetAnswersLabel(){
+
+    private void updateBetAnswersLabel() {
         int moneyLeftToBet = getRootLayoutController().game.getBudget() - getRootLayoutController().game.sumBets();
-        if(moneyLeftToBet>0){
-            question_ans.setText("Bet Answers (still left "+formatter.format(moneyLeftToBet)+"$):");
+        if (moneyLeftToBet > 0) {
+            question_ans.setText("Bet Answers (still left " + formatter.format(moneyLeftToBet) + "$):");
             hideNextBtn();
-        }
-        else{
+        } else {
             question_ans.setText("Bet Answers:");
             showNextBtn();
         }
@@ -310,40 +259,37 @@ public class NewGameController extends LayoutBaseController {
         a4down.setOnAction(null);
 
     }
-    
-    public void showNextBtn(){
+
+    public void showNextBtn() {
         navbar.setVisible(true);
         navbar.setManaged(true);
         System.out.println("quizgame.presentation.views.NewGameController.showNextBtn()");
-        
+
     }
-    public void hideNextBtn(){
+
+    public void hideNextBtn() {
         navbar.setVisible(false);
         navbar.setManaged(false);
         System.out.println("quizgame.presentation.views.NewGameController.hideNextBtn()");
-        
+
     }
 
     private void handleNextBtn() {
         //stop timer
-        if(getRootLayoutController().game.getCurrentTime()>0){
+        if (getRootLayoutController().game.getCurrentTime() > 0) {
             handleStopTimerBtn();
             return;
         }
-            
-        
-        if(getRootLayoutController().game.getBudget()==0){
+
+        if (getRootLayoutController().game.getBudget() == 0) {
             //show end loose view
             rootController.setDefat();
-        }
-        else{
-            if(getRootLayoutController().game.getRemainingQuestions()==0){
+        } else {
+            if (getRootLayoutController().game.getRemainingQuestions() == 0) {
                 //show end victory view
                 rootController.setVictory();
-            }
-            else{
+            } else {
                 //show next question - cartegory choice
-                //getRootLayoutController().game.nextQuestion();
                 rootController.setChooseCategory();
             }
         }
@@ -351,60 +297,54 @@ public class NewGameController extends LayoutBaseController {
 
     void showCorrect() {
         String right = getRootLayoutController().game.getCurrentQuestion().getRightAnswer();
-        
+
         int ans = 0;
-        
-        
-         a1_txt.getStyleClass().add("answered");
-         a2_txt.getStyleClass().add("answered");
-         a3_txt.getStyleClass().add("answered");
-         a4_txt.getStyleClass().add("answered");
-        
-        if(a1_txt.getText().equals(right)) {
+
+        a1_txt.getStyleClass().add("answered");
+        a2_txt.getStyleClass().add("answered");
+        a3_txt.getStyleClass().add("answered");
+        a4_txt.getStyleClass().add("answered");
+
+        if (a1_txt.getText().equals(right)) {
             a1_txt.getStyleClass().add("correct");
-            ans = 0;    
-        }
-        else if(a2_txt.getText().equals(right)) {
+            ans = 0;
+        } else if (a2_txt.getText().equals(right)) {
             a2_txt.getStyleClass().add("correct");
-            ans = 1;  
-        }
-        else if(a3_txt.getText().equals(right)) {
+            ans = 1;
+        } else if (a3_txt.getText().equals(right)) {
             a3_txt.getStyleClass().add("correct");
-            ans = 2;  
-        }
-        else if(a4_txt.getText().equals(right)) {
+            ans = 2;
+        } else if (a4_txt.getText().equals(right)) {
             a4_txt.getStyleClass().add("correct");
-            ans = 3;  
+            ans = 3;
         }
-        System.out.println("quizgame.presentation.views.NewGameController.showCorrect() - "+(ans+1));
-        
+        System.out.println("quizgame.presentation.views.NewGameController.showCorrect() - " + (ans + 1));
+
         int newMoney = getRootLayoutController().game.changeBet(ans, 0);
         int moneyLost = getRootLayoutController().game.getBudget() - newMoney;
         //update new budget
         getRootLayoutController().game.setBudget(newMoney);
         gbController.updateMoney();
-        
+
         //update youu lost label
-        lostLabel.setText("You have "+ formatter.format(getRootLayoutController().game.getBudget()) +"$ left");
+        lostLabel.setText("You have " + formatter.format(getRootLayoutController().game.getBudget()) + "$ left");
     }
 
     public void initDefeat() {
-        toMenuBtn.setOnAction(e-> rootController.setMenu());
+        toMenuBtn.setOnAction(e -> rootController.setMenu());
     }
 
     public void initVictory() {
-        
-        toMenuBtn.setOnAction(e-> rootController.setMenu());
-        
+
+        toMenuBtn.setOnAction(e -> rootController.setMenu());
+
         victoryList.setText("You won " + formatter.format(getRootLayoutController().game.getBudget()) + "$");
-        
+
     }
 
-    
-    public void handleStopTimerBtn(){
+    public void handleStopTimerBtn() {
         gbController.stopTimer();
         getRootLayoutController().game.setCurrentTime(0);
     }
-  
 
 }
