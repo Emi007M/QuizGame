@@ -60,7 +60,7 @@ public class NewGameController extends LayoutBaseController {
     @FXML
     private JFXButton toMenuBtn;
     @FXML
-    private Text victoryList;
+    private Label victoryList;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -201,49 +201,49 @@ public class NewGameController extends LayoutBaseController {
     }
 
     private void handleA1AddBtn() {
-        int bet = getRootLayoutController().game.changeBet(0, 10000);
+        int bet = getRootLayoutController().game.changeBet(0, getRootLayoutController().game.getStep());
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA1DownBtn() {
-        int bet = getRootLayoutController().game.changeBet(0, -10000);
+        int bet = getRootLayoutController().game.changeBet(0, getRootLayoutController().game.getStep()*(-1));
         a1_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA2AddBtn() {
-        int bet = getRootLayoutController().game.changeBet(1, 10000);
+        int bet = getRootLayoutController().game.changeBet(1, getRootLayoutController().game.getStep());
         a2_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA2DownBtn() {
-        int bet = getRootLayoutController().game.changeBet(1, -10000);
+        int bet = getRootLayoutController().game.changeBet(1, getRootLayoutController().game.getStep()*(-1));
         a2_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA3AddBtn() {
-        int bet = getRootLayoutController().game.changeBet(2, 10000);
+        int bet = getRootLayoutController().game.changeBet(2, getRootLayoutController().game.getStep());
         a3_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA3DownBtn() {
-        int bet = getRootLayoutController().game.changeBet(2, -10000);
+        int bet = getRootLayoutController().game.changeBet(2, getRootLayoutController().game.getStep()*(-1));
         a3_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA4AddBtn() {
-        int bet = getRootLayoutController().game.changeBet(3, 10000);
+        int bet = getRootLayoutController().game.changeBet(3, getRootLayoutController().game.getStep());
         a4_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }
 
     private void handleA4DownBtn() {
-        int bet = getRootLayoutController().game.changeBet(3, -10000);
+        int bet = getRootLayoutController().game.changeBet(3, getRootLayoutController().game.getStep()*(-1));
         a4_bet.setText("Bet: " + formatter.format(bet) + "$");
         updateBetAnswersLabel();
     }

@@ -17,9 +17,11 @@ public class Game {
     private int currentTime;
 
     private int[] bets;
+    
+    private int step = 50000;
 
     public Game() {
-        totalQuestions = 4;
+        totalQuestions = 10;
         remainingQuestions = totalQuestions;
         questionService = new QuestionService();
         questionService.populateDB();
@@ -40,6 +42,11 @@ public class Game {
     public int getRunningTimer() {
         return --currentTime;
     }
+
+    public int getStep() {
+        return step;
+    }
+    
 
     /**
      * used by add/subtract answer buttons
