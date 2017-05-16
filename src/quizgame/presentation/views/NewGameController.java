@@ -87,6 +87,10 @@ public class NewGameController extends LayoutBaseController {
 
     }
 
+    public JFXButton getNextBtn() {
+        return nextBtn;
+    }
+
 
     /*--Difficulty level button views initialization--*/
     private void handleEasyBtn() {

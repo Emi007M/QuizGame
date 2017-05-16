@@ -29,7 +29,7 @@ public class QuestionService {
     public Question getRandomQuestionByCategory(String category) {
 
         Collections.shuffle(questions);
-        System.out.println(questions.toString());
+       //System.out.println(questions.toString());
         for (Question q : questions) {
             if (q.getCategory().equals(category) && q.isUsed() == false) {
                 q.setUsed(true);

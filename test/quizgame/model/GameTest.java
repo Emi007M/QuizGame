@@ -212,9 +212,15 @@ public class GameTest {
     public void testNextQuestion() {
         System.out.println("nextQuestion");
         Game instance = new Game();
+        int remainingQuestions = instance.getRemainingQuestions();
         instance.nextQuestion();
+        int remainingQuestions2 =  instance.getRemainingQuestions();
+        int result = remainingQuestions - remainingQuestions2;
+        assertEquals(1,result);
+        result = instance.sumBets();
+        assertEquals(0, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**

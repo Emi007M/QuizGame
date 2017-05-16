@@ -5,6 +5,7 @@
  */
 package quizgame.model;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import org.junit.After;
@@ -73,13 +74,28 @@ public class QuestionServiceTest {
     @Test
     public void testGetRandomQuestionByCategory() {
         System.out.println("getRandomQuestionByCategory");
-        String category = "";
+        String category = "Sport";
         QuestionService instance = new QuestionService();
-        Question expResult = null;
-        Question result = instance.getRandomQuestionByCategory(category);
+        instance.populateDB();
+
+        Set<Question> allQuestions = new HashSet<>();
+        for(int i=0;i<instance.getAllQuestions().size();i++){
+            if(instance.getAllQuestions().get(i).getCategory().equals(category))
+              allQuestions.add(instance.getAllQuestions().get(i));
+        }
+        int expResult = allQuestions.size();
+        Set<Question> randomQuestions = new HashSet<>();
+        Question q;
+        for(int i=0;i<expResult*100;i++){
+            q = instance.getRandomQuestionByCategory(category);
+            if(q!=null)
+            randomQuestions.add(q);
+        }
+        System.out.println("random questions to string " + randomQuestions.toString());
+        int result = randomQuestions.size();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
