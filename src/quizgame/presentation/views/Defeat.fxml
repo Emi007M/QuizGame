@@ -19,7 +19,7 @@
     
     <children>
          
-        <Label  text="DEFEAT" />
+       <Label fx:id="defeatL" text="DEFEAT" />
         <Label  text="you didn't manage to answer 10 questions" />
 
         

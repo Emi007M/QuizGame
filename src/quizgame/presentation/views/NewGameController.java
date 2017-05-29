@@ -84,6 +84,8 @@ public class NewGameController extends LayoutBaseController {
         } catch (NullPointerException e) {
 
         }
+        
+       
 
     }
 

@@ -5,6 +5,8 @@
  */
 package quizgame.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -48,6 +50,7 @@ public class GameTest {
         instance.setCurrentCategory("Sport");
         Question result = instance.generateQuestion();
         assertEquals(expResult, result.getCategory());
+
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -187,6 +190,7 @@ public class GameTest {
         instance.nextQuestion();
         int result = instance.getRemainingQuestions();
         assertEquals(expResult, result);
+        System.out.println("quizgame.model.GameTest.testGetRemainingQuestions() " + expResult + " " + result );
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
     }

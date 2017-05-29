@@ -20,7 +20,7 @@
     
     <children>
          
-        <Label  text="VICTORY" />
+        <Label fx:id="victoryL" text="VICTORY" />
         <Label fx:id="victoryList" text="todo answers list" />
 
         

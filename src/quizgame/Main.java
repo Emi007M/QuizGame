@@ -16,9 +16,9 @@ import quizgame.presentation.RootLayoutController;
  */
 public class Main extends Application {
 
-    private Stage primaryStage;
+    public Stage primaryStage;
     public BorderPane rootLayout;
-    private RootLayoutController mainController;
+    public RootLayoutController mainController;
 
     public static void main(String[] args) throws IOException {
         //needed for buiding .exe file

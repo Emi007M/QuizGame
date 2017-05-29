@@ -8,9 +8,14 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="QuizGame.jar" size="245895" download="eager" />
+    <jar href="QuizGame.jar" size="245916" download="eager" />
     <jar href="lib\fontawesomefx-8.0.0.jar" size="65296" download="eager" />
+    <jar href="lib\guava-18.0.jar" size="2256213" download="eager" />
+    <jar href="lib\hamcrest-all-1.3.jar" size="306578" download="eager" />
     <jar href="lib\jfoenix-1.4.0.jar" size="2363143" download="eager" />
+    <jar href="lib\testFx-3.1.2.jar" size="63667" download="eager" />
+    <jar href="lib\testfx-core-4.0.4-alpha.jar" size="132677" download="eager" />
+    <jar href="lib\testfx-junit-4.0.4-alpha.jar" size="5558" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="QuizGame" >
     <param name="requiredFXVersion" value="8.0+"/>
