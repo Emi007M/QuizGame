@@ -52,62 +52,6 @@ public class FunctionTests extends ApplicationTest {
     public FunctionTests() {
     }
 
-
-    @Test
-    public void should_give_difficulty_choice_on_new_game() {
-        // when:
-        clickOn("#BtnNewGame");
-        // then:
-        assertTrue(GuiTest.exists("#BtnEasy"));
-        assertTrue(GuiTest.exists("#BtnMedium"));
-        assertTrue(GuiTest.exists("#BtnHard"));
-        
-    }
-    
-    @Test
-    public void should_give_categories_choice_before_showing_question() {
-        // when:
-        clickOn("#BtnNewGame");
-        clickOn("#BtnMedium");
-        
-        JFXButton btn = GuiTest.find("#Cat1");
-        String expResult = btn.getText();
-        System.out.println(expResult);
-        clickOn("#Cat1");
-        
-        String result = m.mainController.game.getCurrentCategory();
-        // then:
-        assertEquals(expResult, result);
-
-    }
-    
-    @Test
-    public void should_display_progress_bar() {
-        // when:
-        clickOn("#BtnNewGame");
-        clickOn("#BtnMedium");
-        clickOn("#Cat1");
-        
-        // then:
-        assertTrue(GuiTest.exists("#labelQuestionNo"));
-
-    }
-    
-     @Test
-    public void should_be_able_to_place_bets() {
-        // when:
-        clickOn("#BtnNewGame");
-        clickOn("#BtnMedium");
-
-        clickOn("#Cat1");
-        clickOn("#a1up");
-        Label lbl = GuiTest.find("#a1_bet");
-        String result = lbl.getText();
-        String expResult = "Bet: " + formatter.format(m.mainController.game.getStep()) + "$";
-        // then:
-         assertEquals(expResult, result);
-  
-    }
     
     @Test
     public void should_be_able_to_preview_question() {
@@ -118,11 +62,9 @@ public class FunctionTests extends ApplicationTest {
         Text txt = GuiTest.find("#question_txt");
         String result = txt.getText();
         assertNotNull(result);
-        
-
     }
     
-     @Test
+    @Test
     public void should_be_able_to_preview_answers() {
         clickOn("#BtnNewGame");
         clickOn("#BtnMedium");
@@ -146,6 +88,16 @@ public class FunctionTests extends ApplicationTest {
 
     }
 
+    @Test
+    public void should_give_difficulty_choice_on_new_game() {
+        // when:
+        clickOn("#BtnNewGame");
+        // then:
+        assertTrue(GuiTest.exists("#BtnEasy"));
+        assertTrue(GuiTest.exists("#BtnMedium"));
+        assertTrue(GuiTest.exists("#BtnHard"));
+        
+    }
     
     @Test
     public void should_allow_stopping_timer() throws InterruptedException {
@@ -173,120 +125,50 @@ public class FunctionTests extends ApplicationTest {
     }
     
     @Test
-    public void should_display_game_over_while_fail() throws InterruptedException {
-        // given:
+    public void should_be_able_to_place_bets() {
+        // when:
         clickOn("#BtnNewGame");
         clickOn("#BtnMedium");
+
         clickOn("#Cat1");
-
-        // when:
-        int total = m.mainController.game.getBudget();
-        int step = m.mainController.game.getStep();
-        
-        Label ans1 = GuiTest.find("#a1_txt");
-        if (!m.mainController.game.getCurrentQuestion().getRightAnswer().equals(ans1.getText())) {
-            for (int i = total / step; i >= 0; i--) {
-                clickOn("#a1up");
-            }
-        } else {
-            for (int i = total / step; i >= 0; i--) {
-                clickOn("#a2up");
-            }
-        }
-
-        clickOn("#nextBtn");
-        clickOn("#nextBtn");
-
-
+        clickOn("#a1up");
+        Label lbl = GuiTest.find("#a1_bet");
+        String result = lbl.getText();
+        String expResult = "Bet: " + formatter.format(m.mainController.game.getStep()) + "$";
         // then:
-        assertTrue(GuiTest.exists("#defeatL"));
+         assertEquals(expResult, result);
+  
     }
     
-     @Test
-    public void should_display_victory_while_won() throws InterruptedException {
-        // given:
+    @Test
+    public void should_display_progress_bar() {
+        // when:
         clickOn("#BtnNewGame");
         clickOn("#BtnMedium");
-         int step = m.mainController.game.getStep();
-        int qsum = m.mainController.game.getTotalQuestions();
-        for(int j=0;j<qsum;j++){
         clickOn("#Cat1");
+        
+        // then:
+        assertTrue(GuiTest.exists("#labelQuestionNo"));
 
+    }
+    
+    
+    @Test
+    public void should_give_categories_choice_before_showing_question() {
         // when:
-        int total = m.mainController.game.getBudget();
+        clickOn("#BtnNewGame");
+        clickOn("#BtnMedium");
+        
+        JFXButton btn = GuiTest.find("#Cat1");
+        String expResult = btn.getText();
+        System.out.println(expResult);
+        clickOn("#Cat1");
+        
+        String result = m.mainController.game.getCurrentCategory();
+        // then:
+        assertEquals(expResult, result);
+
+    }
        
-        
-        Label ans1 = GuiTest.find("#a1_txt");
-        Label ans2 = GuiTest.find("#a2_txt");
-        Label ans3 = GuiTest.find("#a3_txt");
-        
-        if (m.mainController.game.getCurrentQuestion().getRightAnswer().equals(ans1.getText())) {
-            for (int i = total / step; i >= 0; i--) {
-                clickOn("#a1up");
-            }
-        } else if (m.mainController.game.getCurrentQuestion().getRightAnswer().equals(ans2.getText())) {
-            for (int i = total / step; i >= 0; i--) {
-                clickOn("#a2up");
-            }
-        }else if (m.mainController.game.getCurrentQuestion().getRightAnswer().equals(ans3.getText())) {
-            for (int i = total / step; i >= 0; i--) {
-                clickOn("#a3up");
-            }
-        }else {
-            for (int i = total / step; i >= 0; i--) {
-                clickOn("#a4up");
-            }
-        }
 
-        clickOn("#nextBtn");
-        clickOn("#nextBtn");
-        }
-
-        // then:
-        assertTrue(GuiTest.exists("#victoryL"));
-    }
-
-    @Test
-    public void should_ask_before_quitting() {
-        // when:
-        clickOn("#BtnQuit");
-        push(ENTER);
-        
-
-        // then:
-        assertTrue(GuiTest.getWindows().isEmpty());
-
-    }
-    
-    @Test
-    public void should_highlight_correct_answer_after_bet() throws InterruptedException {
-        // given:
-        clickOn("#BtnNewGame");
-        clickOn("#BtnMedium");
-        clickOn("#Cat1");
-
-        // when:
-        int total = m.mainController.game.getBudget();
-        int step = m.mainController.game.getStep();
-        
-        for (int i = total / step; i >= 0; i--) {
-            clickOn("#a1up");
-        }
-        clickOn("#nextBtn");
-        
-        Label ans1 = GuiTest.find("#a1_txt");
-        Label ans2 = GuiTest.find("#a2_txt");
-        Label ans3 = GuiTest.find("#a3_txt");
-        Label ans4 = GuiTest.find("#a4_txt");
-        String correctAns = m.mainController.game.getCurrentQuestion().getRightAnswer();
-        
-        Label ans = null;
-        if(correctAns.equals(ans1.getText()))      ans = ans1;
-        else if(correctAns.equals(ans2.getText())) ans = ans2;
-        else if(correctAns.equals(ans3.getText())) ans = ans3;
-        else if(correctAns.equals(ans4.getText())) ans = ans4;
-
-        // then:
-        assertTrue(ans.getStyleClass().contains("correct"));
-    }
 }
